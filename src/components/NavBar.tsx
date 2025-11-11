@@ -38,12 +38,11 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-indigo-600 text-white shadow-lg">
       <div className="container mx-auto flex justify-between items-center px-6 py-3">
-        {/* Left - Logo */}
         <Link to="/" className="text-2xl font-bold tracking-wide">
-          MyStore 🛍️
+          MERN-Mindrisers(SAJAG)
         </Link>
 
-        {/* Center - Links */}
+
         <div className="flex gap-6">
           <Link to="/" className="hover:text-gray-200 transition">
             Home
@@ -52,8 +51,6 @@ const Navbar: React.FC = () => {
             Products
           </Link>
         </div>
-
-        {/* Right - Auth Button */}
         <div>{authButton}</div>
       </div>
     </nav>
