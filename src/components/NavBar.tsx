@@ -51,11 +51,6 @@ const Navbar: React.FC = () => {
           <Link to="/products" className="hover:text-gray-200 transition">
             Products
           </Link>
-          {user && (
-            <Link to="/user" className="hover:text-gray-200 transition">
-              Profile
-            </Link>
-          )}
         </div>
 
         {/* Right - Auth Button */}
