@@ -3,9 +3,10 @@ import { BrowserRouter, Route, } from 'react-router'
 import './App.css'
 import Home from './pages/Home'
 import ProductList from './pages/ProductList'
-// import UserList from './pages/UserList'
+import UserList from './pages/UserList'
 import { Routes } from 'react-router'
 import Navbar from './components/NavBar'
+import Login from './pages/login'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-       {/* <Route path="/users" element={<UserList />} /> */}
+        <Route path="/Login" element={<Login />} />
+       <Route path="/users" element={<UserList />} />
         <Route path="/products" element={<ProductList />} />
       </Routes>
     </BrowserRouter>
