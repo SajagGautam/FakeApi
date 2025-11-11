@@ -6,7 +6,7 @@ import ProductList from './pages/ProductList'
 import UserList from './pages/UserList'
 import { Routes } from 'react-router'
 import Navbar from './components/NavBar'
-import Login from './pages/login'
+import LoginUser from './pages/LoginUser'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/Login" element={<LoginUser />} />
        <Route path="/users" element={<UserList />} />
         <Route path="/products" element={<ProductList />} />
       </Routes>

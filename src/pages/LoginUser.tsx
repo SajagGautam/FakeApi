@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { setCredentials } from "../features/authSlices";
 import { useNavigate } from "react-router-dom";
 
-const Login: React.FC = () => {
+const LoginUser: React.FC = () => {
   const [email, setEmail] = useState("john@mail.com");
   const [password, setPassword] = useState("changeme");
   const [error, setError] = useState("");
@@ -79,4 +79,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default LoginUser;
